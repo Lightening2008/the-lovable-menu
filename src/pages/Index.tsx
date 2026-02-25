@@ -66,8 +66,8 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <HeroSection />
 
-      <main className="max-w-4xl mx-auto px-4 py-12">
-        <div className="grid md:grid-cols-2 gap-12 md:gap-16">
+      <main className="max-w-3xl mx-auto px-4 py-8">
+        <div className="grid grid-cols-2 gap-10 md:gap-14">
           <MenuSection title="Tea & Coffee" items={menuData.hotBeverages} image={teaImg} imageAlt="Hot chai tea" delay={100} />
           <MenuSection title="Snacks" items={menuData.snacks} delay={200} />
           <MenuSection title="Sandwich" items={menuData.sandwiches} image={sandwichImg} imageAlt="Grilled sandwich" delay={300} />

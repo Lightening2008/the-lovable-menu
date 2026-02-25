@@ -14,33 +14,26 @@ interface MenuSectionProps {
 const MenuSection = ({ title, items, image, imageAlt, delay = 0 }: MenuSectionProps) => {
   return (
     <div
-      className="opacity-0 animate-fade-in-up"
+      className="opacity-0 animate-fade-in-up text-center"
       style={{ animationDelay: `${delay}ms` }}
     >
-      <div className="flex items-center gap-4 mb-6">
-        {image && (
-          <div className="circle-image w-20 h-20 flex-shrink-0">
+      <h2 className="font-display text-2xl md:text-3xl italic text-primary font-semibold mb-4">
+        {title}
+      </h2>
+
+      {image && (
+        <div className="flex justify-center mb-4">
+          <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-accent/40 shadow-md">
             <img src={image} alt={imageAlt || title} className="w-full h-full object-cover" />
           </div>
-        )}
-        <div>
-          <h2 className="font-display text-2xl md:text-3xl italic text-primary font-semibold">
-            {title}
-          </h2>
-          <div className="menu-divider mt-2" />
         </div>
-      </div>
-      <div className="space-y-3 pl-2">
+      )}
+
+      <div className="space-y-1.5">
         {items.map((item, index) => (
-          <div key={index} className="flex items-baseline justify-between gap-2">
-            <span className="font-body text-foreground tracking-wider text-sm uppercase">
-              {item.name}
-            </span>
-            <span className="flex-1 border-b border-dotted border-coffee-light mx-2 mb-1" />
-            <span className="font-display text-accent font-semibold text-lg">
-              ₹{item.price}
-            </span>
-          </div>
+          <p key={index} className="font-body text-foreground tracking-[0.15em] text-sm uppercase">
+            {item.name} <span className="text-accent font-semibold">· ₹{item.price}</span>
+          </p>
         ))}
       </div>
     </div>
