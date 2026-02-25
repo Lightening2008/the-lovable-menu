@@ -21,7 +21,7 @@ const HeroSection = () => {
         <div className="mt-4 w-24 h-0.5 bg-accent opacity-0 animate-fade-in-up" style={{ animationDelay: '400ms' }} />
         <p className="font-body text-warm-cream/80 mt-4 text-sm tracking-[0.3em] uppercase opacity-0 animate-fade-in-up"
            style={{ animationDelay: '500ms' }}>
-          Goodluck Café
+          Cafe Kolar
         </p>
       </div>
     </section>
