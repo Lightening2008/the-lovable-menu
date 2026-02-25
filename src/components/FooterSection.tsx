@@ -20,7 +20,7 @@ const FooterSection = () => {
         </div>
         <div className="menu-divider !bg-gradient-to-r from-transparent via-coffee-light/30 to-transparent" />
         <p className="text-xs text-coffee-light tracking-widest uppercase">
-          © 2026 Goodluck Café — All rights reserved
+          © 2026 Cafe Kolar — All rights reserved
         </p>
       </div>
     </footer>
