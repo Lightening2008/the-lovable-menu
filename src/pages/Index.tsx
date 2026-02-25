@@ -1,6 +1,7 @@
 import HeroSection from "@/components/HeroSection";
 import MenuSection from "@/components/MenuSection";
 import FooterSection from "@/components/FooterSection";
+import coffeeBg from "@/assets/coffee-bg.png";
 
 import teaImg from "@/assets/tea.webp";
 import coldCoffeeImg from "@/assets/cold-coffee.webp";
@@ -63,7 +64,7 @@ const menuData = {
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background" style={{ backgroundImage: `url(${coffeeBg})`, backgroundSize: '400px', backgroundRepeat: 'repeat', backgroundBlendMode: 'multiply' }}>
       <HeroSection />
 
       <main className="max-w-3xl mx-auto px-4 py-8">
